@@ -1,0 +1,7 @@
+<div class="tabs">
+  @for (tab of tabs; track tab) {
+  <a [routerLink]="tab.route" routerLinkActive="active">{{
+    tab.name | titlecase
+  }}</a>
+  }
+</div>

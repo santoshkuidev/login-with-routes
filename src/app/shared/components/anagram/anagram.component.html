@@ -1,0 +1,12 @@
+<div class="page">
+  <h2>Anagram</h2>
+  <div>
+    <label for="input1">Enter first string:</label>
+    <input type="text" id="input1" [(ngModel)]="string1" required />
+  </div>
+  <div>
+    <label for="input2">Enter second string:</label>
+    <input type="text" id="input2" [(ngModel)]="string2" required />
+  </div>
+  <button (click)="checkAnagram()">Check for Anagram</button>
+</div>
