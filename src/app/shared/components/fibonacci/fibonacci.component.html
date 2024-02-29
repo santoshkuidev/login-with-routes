@@ -3,7 +3,9 @@
   <div>
     <label for="number">Enter a number:</label>
     <input type="number" id="number" [(ngModel)]="inputNumber" required />
-    <button (click)="generateFibonacci()">Generate</button>
+    <button class="button-outline" (click)="generateFibonacci()">
+      Generate
+    </button>
   </div>
   @if(fibonacciSeries.length){
   <h2>Fibonacci Series:</h2>

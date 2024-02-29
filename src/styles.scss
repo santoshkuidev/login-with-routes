@@ -8,3 +8,77 @@
     gap: 1rem;
     flex-direction: column;
 }
+
+input, button {
+    width: -webkit-fill-available;
+    margin: 0.5rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 700;
+    max-width: 304px;
+}
+
+input {
+    padding: 0 0.5rem;
+    border: 2px solid chocolate;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+
+    &.active {
+        font-weight: 700;
+        font-size: x-large;
+        border-bottom: 2px solid;
+    }
+
+    &:hover {
+        border-bottom: 2px solid;
+    }
+}
+
+a, label, .button-link {
+    color: chocolate;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+
+.button- {
+    background: none;
+    
+    max-width: 304px;
+
+    &primary {
+        background-color: chocolate;
+        border: none;
+        color: white;
+    }
+
+    &outline {
+        background-color: white;
+        border: 1px solid chocolate;
+        color: chocolate;
+
+        &:hover {
+            background-color: chocolate;
+            color: white;
+        }
+    }
+
+    &link {
+        background: none;
+        border: none;
+        width: fit-content;
+        
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

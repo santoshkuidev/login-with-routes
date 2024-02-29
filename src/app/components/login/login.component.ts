@@ -14,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class LoginComponent {
   loginForm!: FormGroup;
-
+  showPassword = false;
+  errorMessage: string = '';
   constructor(private formBuilder: FormBuilder, private apiService:ApiService) { }
 
   ngOnInit(): void {
@@ -24,7 +25,16 @@ export class LoginComponent {
     });
   }
 
+  get username() {
+    return this.loginForm.get('username');
+  }
+
+  get password() {
+    return this.loginForm.get('password');
+  }
+
   onSubmit() {
+    this.loginForm.markAllAsTouched();
     if (this.loginForm.valid) {
       console.log('Form submitted with values:', this.loginForm.value);
 
